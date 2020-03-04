@@ -4,7 +4,7 @@
 
 #bundle exec rails db:migrate
 
-bundle exec sidekiq -C ./config/sidekiq.yml -d -L ./log/sidekiq.log -e production
+bundle exec sidekiq -C ./config/sidekiq.yml -L ./log/sidekiq.log -e production
 #
 #if [ "$APP_RUN_STATIC_TASK" = 'TRUE' ]; then
 #  bundle exec rails db:static
