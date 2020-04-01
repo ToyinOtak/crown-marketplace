@@ -281,6 +281,10 @@ module ApplicationHelper
     date_object&.strftime '%e %B %Y'
   end
 
+  def format_date_short_month(date_object)
+    date_object&.strftime '%e %b %Y'
+  end
+
   def format_date_time(date_object)
     date_object&.strftime '%e %B %Y, %l:%M%P'
   end

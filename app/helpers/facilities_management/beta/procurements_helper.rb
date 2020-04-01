@@ -43,6 +43,11 @@ module FacilitiesManagement::Beta::ProcurementsHelper
     "#{format_date start_date} to #{format_date end_date}"
   end
 
+  def format_extension_short_month(start_date, end_date)
+    "#{format_date_short_month start_date} to #{format_date_short_month end_date}"
+  end
+
+
   def any_service_codes(procurement_buildings)
     procurement_buildings.map(&:service_codes).flatten.reject(&:blank?).any?
   end
